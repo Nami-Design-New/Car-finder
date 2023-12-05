@@ -8,6 +8,7 @@
     <!-- Required CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -111,72 +112,84 @@
     <main>
         <!-- hero section -->
         <section class="hero_section">
-            <div class="hero_container">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 p-1" id="order2">
-                        <div class="inner-section">
-                            <div class="slide center">
-                                <img src="assets/images/right1.webp">
-                                <div class="layer">
-                                    <h5>إضاءة وإكسسوارات لامعة</h5>
-                                </div>
-                            </div>
-                            <div class="slide center">
-                                <img src="assets/images/right2.webp">
-                                <div class="layer">
-                                    <h5>سوائل وزيوت لصحة المحرك</h5>
-                                </div>
-                            </div>
+                    <div class="col-lg-6 col-12 mb-lg-0 mb-4">
+                        <div class="text">
+                            <span>Fastest Speed <img src="assets/images/meter.svg" alt=""></span>
+                            <h1>
+                                To Best Way Buy Dream Car.
+                            </h1>
+                            <p>
+                                Car dealerships may sell new cars from one or several manufacturers, as well as used
+                                cars
+                                from a variety of sources.
+                            </p>
                         </div>
                     </div>
-                    <div class="col-lg-6 p-1" id="order1">
-                        <div class="inner-section slider">
-                            <div class="swiper heroSwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/center.webp" alt="">
-                                        <div class="layer">
-                                            <h4>استكشف قطع غيار وإكسسواراتنا</h4>
-                                            <p>اكتشف أحدث القطع والإكسسوارات لتحسين سيارتك.</p>
-                                            <a href="shop.html">تسوق الآن</a>
+                    <div class="col-lg-6 col-12">
+                        <div class="car-filter-area">
+                            <h4>Find Your Dream Car</h4>
+                            <form method="get" action="shop.html">
+                                <div class="filter-menu">
+                                    <ul class="car-category">
+                                        <li class="nav-item" role="presentation">
+                                            <label for="new_card">
+                                                <img decoding="async" src="assets/images/car-01.svg" alt="car1-icon">
+                                                <span>Brand New</span>
+                                                <input type="radio" id="new_card" name="vehicle_condition_info_value"
+                                                    value="Brand New" checked="">
+                                            </label>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <label for="used_car">
+                                                <img decoding="async" src="assets/images/car-01.svg" alt="car2-icon">
+                                                <span>Used Car</span>
+                                                <input type="radio" id="used_car" name="vehicle_condition_info_value"
+                                                    value="Used Car">
+                                            </label>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <label for="auction_product">
+                                                <img decoding="async" src="assets/images/car-01.svg" alt="auction-icon">
+                                                <span>Auction</span>
+                                                <input type="radio" id="auction_product" value="auction_product"
+                                                    name="vehicle_condition_info_value">
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <div class="filter-data">
+                                        <div class="form-inner budget-range mb-25">
+                                            <label>Select Budget*</label>
+                                            <input type="number" name="vehicle_min_price" placeholder="Min Budget">
+                                            <input type="number" name="vehicle_max_price" placeholder="Max Budget">
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/center2.jpg" alt="">
-                                        <div class="layer">
-                                            <h4>خبراء السيارات في خدمتك</h4>
-                                            <p>
-                                                ثق بخبرتنا في تقديم أعلى جودة منتجات الصيانة والخدمات
-                                            </p>
-                                            <a href="about-us.html">تعرف علينا</a>
+                                        <div class="form-inner mb-25">
+                                            <label>Select Brand*</label>
+                                            <select name="vehicle_brand" class="select">
+                                                <option value="">Select Brand</option>
+                                                <option value="audi">Audi</option>
+                                                <option value="bmw">BMW</option>
+                                                <option value="ferrari">Ferrari</option>
+                                                <option value="hyundai">Hyundai</option>
+                                                <option value="jeep">Jeep</option>
+                                                <option value="mercedes">Mercedes</option>
+                                                <option value="mezda">Mezda</option>
+                                                <option value="sedan">Sedan</option>
+                                                <option value="suzuki">Suzuki</option>
+                                                <option value="tata">TATA</option>
+                                                <option value="tesla">Tesla</option>
+                                                <option value="toyota">Toyota</option>
+                                            </select>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="assets/images/center3.jpg" alt="">
-                                        <div class="layer">
-                                            <h4>لا تتردد في الاتصال بنا</h4>
-                                            <p>
-                                                هل لديك أسئلة أو تحتاج إلى مساعدة؟ فريقنا هنا لمساعدتك
-                                            </p>
-                                            <a href="contact-us.html">اتصل بنا</a>
+                                        <div class="form-inner last">
+                                            <button class="primary-btn1" type="submit">
+                                                SEARCH 22 VEHICLES
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 p-1" id="order3">
-                        <div class="inner-section">
-                            <div class="slide center">
-                                <img src="assets/images/left.jpg" alt="">
-                                <div class="layer">
-                                    <h5>صحة المحرك أمر بالغ الأهمية</h5>
-                                    <p>
-                                        اختر أفضل الزيوت والسوائل لضمان طول عمر سيارتك
-                                    </p>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -644,7 +657,13 @@
     </div>
     <!-- JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('select').niceSelect();
+        });
+    </script>
 </body>
 
 </html>
