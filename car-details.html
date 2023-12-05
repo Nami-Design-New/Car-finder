@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car finder</title>
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <!-- offers bar -->
+        <div class="offers_bar">
+            <div class="container">
+                <div class="language">
+                    <button>
+                        العربية
+                        <i class="fa-sharp fa-light fa-language"></i>
+                    </button>
+                </div>
+                <div class="offers">
+                    <div class="swiper offersSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p>Sleek cars, unbeatable prices. Visit us today!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Rev up your drive with affordable, quality cars. Explore now!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Upgrade your commute with stylish and fuel-efficient vehicles. Great deals await!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p>Trade up to luxury without breaking the bank. Visit Car finder now!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#!"> <i class="fa-brands fa-facebook-f"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#!"> <i class="fa-brands fa-instagram"></i> </a>
+                        </li>
+                        <li>
+                            <a href="#!"> <i class="fa-brands fa-twitter"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- nav bar -->
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>CAR FINDER</h1>
+                </a>
+            </div>
+            <div class="navigation_links">
+                <ul>
+                    <li><a class="nav-link active" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li><a class="nav-link" href="about-us.html">About us</a></li>
+                    <li><a class="nav-link" href="contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="cart_open" id="toggleSmallCart">
+                    <h6>0,00 Sar</h6>
+                    <i class="fa-light fa-bag-shopping"></i>
+                    <span>0</span>
+                </div>
+                <!-- not logged in -->
+                <a href="auth.html">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <button data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                </button>
+                <button class="toggler">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <!-- empty cart -->
+        <div class="mini_cart empty">
+            <p>There is no items in cart</p>
+            <div class="inner_cart">
+                <img src="assets/images/empty-cart.png" alt="empty-cart">
+                <div class="subtotal">
+                    <p> Total:</p>
+                    <span>0,00 Sar</span>
+                </div>
+            </div>
+            <div class="btns">
+                <a href="shopping-cart.html">cart</a>
+                <a href="checkout.html">Check out</a>
+            </div>
+        </div>
+    </header>
+    <!-- main container -->
+    <main>
+        <!-- page header -->
+        <div class="page_header container d-flex align-items-center">
+            <h6>
+                <a href="index.html">Home</a>
+                <i class="fa-regular fa-angle-right"></i>
+                Audi A8 sedan
+            </h6>
+        </div>
+        <!-- products_details section -->
+        <section class="products_details__section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 order-lg-0 order-1">
+                        <div class="car_information">
+                            <h3 class="sector_name">Overview</h3>
+                            <div class="sector">
+                                <ul>
+                                    <li>
+                                        <div class="field">
+                                            <b>Price</b>
+                                            <span>$280,000</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Make</span>
+                                            <span>Audi</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Model</span>
+                                            <span>A8 sedan</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Year/Month</span>
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Mileage</span>
+                                            <span>25,100 miles</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Fuel Type</span>
+                                            <span>petrol+gas</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Door’s</span>
+                                            <span>4 doors</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>No. of Cylinder</span>
+                                            <span>8</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Engine</span>
+                                            <span>22,231 cc</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Transmission</span>
+                                            <span>Manual</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Color’s</span>
+                                            <span>sky blue</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Wheel’s</span>
+                                            <span>4</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Steering</span>
+                                            <span>Right</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="sector_name">Engine Performance</h3>
+                            <div class="sector">
+                                <ul>
+                                    <li>
+                                        <div class="field">
+                                            <span>Induction</span>
+                                            <span>Aspirated</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Engine Size</span>
+                                            <span>3.5 L</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Cylinders</span>
+                                            <span>8 cyl</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Engine Config</span>
+                                            <span>In-line</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Valve Gear</span>
+                                            <span>DOHC with VVT</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Fuel Injection</span>
+                                            <span>Direct Injection</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="field">
+                                            <span>Power</span>
+                                            <span>140 kw 7000 rpm</span>
+                                        </div>
+                                        <div class="field">
+                                            <span>Engine Location</span>
+                                            <span>front</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-lg-0 mb-5 order-lg-1 order-0">
+                        <div class="swiper proDetailsSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/images/vehicle-20.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/vehicle-21.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/vehicle-23.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/images/vehicle-24.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg width="12" height="17" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 6.50008L0 0L5.09091 6.50008L0 13L8 6.50008Z"></path>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <svg width="12" height="17" viewBox="0 0 8 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 6.50008L8 0L2.90909 6.50008L8 13L0 6.50008Z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="descrition">
+                            <h1>Audi A8 sedan</h1>
+                            <p>
+                                Introducing the Mazda CX-30-2021 – a harmonious blend of style, performance, and
+                                cutting-edge technology. This crossover SUV is designed to elevate your driving
+                                experience with its sleek design and advanced features. From the powerful yet efficient
+                                engine to the meticulously crafted interior, the Mazda CX-30-2021 offers a driving
+                                sensation like no other. Experience innovation on the road and explore the world in
+                                style with this dynamic and versatile vehicle.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- similar producst -->
+            <section class="store_section">
+                <div class="container">
+                    <!-- car parts store row -->
+                    <div class="row">
+                        <!-- section_head -->
+                        <div class="col-12 d-flex justify-content-between section_head">
+                            <h3>Similar Cars</h3>
+                        </div>
+                        <div class="swiper carsSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="car_card">
+                                        <div class="img">
+                                            <img src="assets/images/vehicle-24.jpg" alt="vehicle-24">
+                                            <div class="pro_pice">
+                                                <span>$95,500</span>
+                                            </div>
+                                            <div class="over_lay">
+                                                <span><i class="fa-sharp fa-light fa-images"></i> 3</span>
+                                            </div>
+                                        </div>
+                                        <div class="car_info">
+                                            <div class="name">
+                                                <h4>Audi A4 sedan</h4>
+                                            </div>
+                                            <ul class="details">
+                                                <li>Petrol - Gas</li>
+                                                <li>2017</li>
+                                                <li>Automatic</li>
+                                                <li>4000cc</li>
+                                                <li>380mph</li>
+                                            </ul>
+                                            <div class="link">
+                                                <a href="car-details.html"><span>View Details</span>
+                                                    <div><i class="fa-solid fa-arrow-up-right"></i></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="car_card">
+                                        <div class="img">
+                                            <img src="assets/images/vehicle-23.jpg" alt="vehicle-24">
+                                            <div class="pro_pice">
+                                                <span>$200,000</span>
+                                            </div>
+                                            <div class="over_lay">
+                                                <span><i class="fa-sharp fa-light fa-images"></i> 3</span>
+                                            </div>
+                                        </div>
+                                        <div class="car_info">
+                                            <div class="name">
+                                                <h4>BMW X6</h4>
+                                            </div>
+                                            <ul class="details">
+                                                <li>Petrol - Gas</li>
+                                                <li>2017</li>
+                                                <li>Automatic</li>
+                                                <li>4000cc</li>
+                                                <li>380mph</li>
+                                            </ul>
+                                            <div class="link">
+                                                <a href="car-details.html"><span>View Details</span>
+                                                    <div><i class="fa-solid fa-arrow-up-right"></i></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="car_card">
+                                        <div class="img">
+                                            <img src="assets/images/vehicle-21.jpg" alt="vehicle-24">
+                                            <div class="pro_pice">
+                                                <span>$95,500</span>
+                                            </div>
+                                            <div class="over_lay">
+                                                <span><i class="fa-sharp fa-light fa-images"></i> 3</span>
+                                            </div>
+                                        </div>
+                                        <div class="car_info">
+                                            <div class="name">
+                                                <h4>Range Rover</h4>
+                                            </div>
+                                            <ul class="details">
+                                                <li>Petrol - Gas</li>
+                                                <li>2017</li>
+                                                <li>Automatic</li>
+                                                <li>4000cc</li>
+                                                <li>380mph</li>
+                                            </ul>
+                                            <div class="link">
+                                                <a href="car-details.html"><span>View Details</span>
+                                                    <div><i class="fa-solid fa-arrow-up-right"></i></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="car_card">
+                                        <div class="img">
+                                            <img src="assets/images/vehicle-20.jpg" alt="vehicle-24">
+                                            <div class="pro_pice">
+                                                <span>$95,500</span>
+                                            </div>
+                                            <div class="over_lay">
+                                                <span><i class="fa-sharp fa-light fa-images"></i> 3</span>
+                                            </div>
+                                        </div>
+                                        <div class="car_info">
+                                            <div class="name">
+                                                <h4>Lexuis</h4>
+                                            </div>
+                                            <ul class="details">
+                                                <li>Petrol - Gas</li>
+                                                <li>2017</li>
+                                                <li>Automatic</li>
+                                                <li>4000cc</li>
+                                                <li>380mph</li>
+                                            </ul>
+                                            <div class="link">
+                                                <a href="car-details.html"><span>View Details</span>
+                                                    <div><i class="fa-solid fa-arrow-up-right"></i></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 p-2">
+                    <div class="about_company">
+                        <a href="index.html" class="logo">
+                            <h2>CAR FINDER</h2>
+                        </a>
+                        <p>
+                            Discover your perfect ride with our Car Finder. Find the ideal vehicle that suits your style
+                            and needs. Start your journey now!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 p-2">
+                    <div class="footer_links">
+                        <h4>Our company</h4>
+                        <ul>
+                            <li>
+                                <a href="about-us.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="shop.html">Shop</a>
+                            </li>
+                            <li>
+                                <a href="blogs.html">Blogs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6 p-2">
+                    <div class="footer_links">
+                        <h4>Useful links</h4>
+                        <ul>
+                            <li>
+                                <a href="privacy-policy.html">Privacy - Policy</a>
+                            </li>
+                            <li>
+                                <a href="terms-conditions.html">Terms - Conditions</a>
+                            </li>
+                            <li>
+                                <a href="FAQs.html">FAQs</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Help & Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-6  p-2">
+                    <div class="footer_links" id="lastOne">
+                        <h4>Technical Support</h4>
+                        <ul>
+                            <li>
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                <a href="mailto:support@khedmaty.net">support@khedmaty.net</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+950012121252"> 950012121252+ </a>
+                            </li>
+                        </ul>
+                        <h4>Follow us on</h4>
+                        <ul class="social">
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="copy_pay">
+                        <p> copy rights © 2023 All rights reserved for
+                            <a href="index.html">
+                                CAR FINDER
+                            </a>
+                        </p>
+                        <div class="payments">
+                            <h6> Payment Methods </h6>
+                            <ul>
+                                <li>
+                                    <img src="assets/images/method1.svg" alt="visa" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/method2.svg" alt="paypal" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/method3.svg" alt="applepay" />
+                                </li>
+                                <li>
+                                    <img src="assets/images/method4.svg" alt="mastercard" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- search modal -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container p-0">
+                        <form action="shop.html" class="row">
+                            <div class="col-12">
+                                <div class="input_search">
+                                    <input type="text" placeholder="Search by car name or model">
+                                </div>
+                            </div>
+                            <div class="col-12 mb-4">
+                                <div class="search_results_no">
+                                    <p><span>12</span> Result</p>
+                                    <a href="shop.html" class="shop_all"> View All
+                                        <i class="fa-regular fa-circle-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 p-2">
+                                <div class="car_card">
+                                    <div class="img">
+                                        <img src="assets/images/vehicle-24.jpg" alt="vehicle-24">
+                                        <div class="pro_pice">
+                                            <span>$95,500</span>
+                                        </div>
+                                        <div class="over_lay">
+                                            <span><i class="fa-sharp fa-light fa-images"></i> 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="car_info">
+                                        <div class="name">
+                                            <h4>Audi A4 sedan</h4>
+                                        </div>
+                                        <ul class="details">
+                                            <li>Petrol - Gas</li>
+                                            <li>2017</li>
+                                            <li>Automatic</li>
+                                            <li>4000cc</li>
+                                            <li>380mph</li>
+                                        </ul>
+                                        <div class="link">
+                                            <a href="car-details.html"><span>View Details</span>
+                                                <div><i class="fa-solid fa-arrow-up-right"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12 p-2">
+                                <div class="car_card">
+                                    <div class="img">
+                                        <img src="assets/images/vehicle-20.jpg" alt="vehicle-24">
+                                        <div class="pro_pice">
+                                            <span>$95,500</span>
+                                        </div>
+                                        <div class="over_lay">
+                                            <span><i class="fa-sharp fa-light fa-images"></i> 3</span>
+                                        </div>
+                                    </div>
+                                    <div class="car_info">
+                                        <div class="name">
+                                            <h4>Lexuis</h4>
+                                        </div>
+                                        <ul class="details">
+                                            <li>Petrol - Gas</li>
+                                            <li>2017</li>
+                                            <li>Automatic</li>
+                                            <li>4000cc</li>
+                                            <li>380mph</li>
+                                        </ul>
+                                        <div class="link">
+                                            <a href="car-details.html"><span>View Details</span>
+                                                <div><i class="fa-solid fa-arrow-up-right"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
