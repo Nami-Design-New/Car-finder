@@ -812,7 +812,7 @@ main .popular_categories .brand_category:hover .link a span {
   width: 60px;
 }
 main .store_section {
-  padding: 60px 0;
+  padding: 60px 16px;
 }
 main .store_section .section_head {
   margin-bottom: 32px;
